@@ -1,0 +1,5 @@
+//Add following to utilize Utilities
+compile 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+compile 'com.kbeanie:image-chooser-library:1.5.8@aar'
+compile 'com.android.support:design:23.1.0'
+compile 'com.github.mrengineer13:snackbar:1.2.0'

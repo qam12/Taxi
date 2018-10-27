@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Car Piker</string>
+
+    <string-array name="spn_eventtype">
+        <item>20000</item>
+        <item>1999</item>
+        <item>1998</item>
+        <item>1997</item>
+        <item>1996</item>
+        <item>1995</item>
+        <item>1994</item>
+    </string-array>
+
+    <string-array name="spn_gendere">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <string-array name="spn_phn">
+        <item>+92</item>
+        <item>+96</item>
+
+    </string-array>
+</resources>

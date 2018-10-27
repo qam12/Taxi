@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    >
+    <ImageButton
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:id="@+id/img_close_r"
+android:src="@drawable/menu_close_icon"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:background="@null"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_70sdp"
+    android:layout_toRightOf="@+id/img_close_r"
+    android:id="@+id/rl_profile"
+    android:layout_below="@+id/img_close_r"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/signup_avatar"
+
+
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/iv_addprofile"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="safeer"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorWhite"
+
+        android:id="@+id/tv_username"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textSize="@dimen/_13sdp"
+        android:layout_toRightOf="@+id/iv_addprofile"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="safeer@gmail.com"
+      android:layout_below="@+id/tv_username"
+        android:textColor="@color/colorWhite"
+
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textSize="@dimen/_10sdp"
+        android:layout_toRightOf="@+id/iv_addprofile"
+        />
+</RelativeLayout>
+
+ <!--   <ListView
+        android:id="@+id/menuList"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@+id/img_close_r"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/menuList"
+
+        android:scrollbars="vertical"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_below="@+id/rl_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        />
+</RelativeLayout>

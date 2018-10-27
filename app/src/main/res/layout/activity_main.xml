@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qamber.carpiker.Activity.MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_map"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:background="@drawable/country_map_vector"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_map"
+        android:textStyle="bold"
+        android:id="@+id/tv_country"
+        android:text="Choose Your Country"
+        android:textSize="@dimen/_15sdp"
+        />
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_people_attending"
+android:background="@drawable/shadow"
+        android:scrollbars="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_country"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/continue_btn"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/iv_continue"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
